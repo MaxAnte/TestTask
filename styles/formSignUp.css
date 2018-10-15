@@ -1,0 +1,41 @@
+.form-wrap{
+    height: 600px;
+    padding-top: 5px;
+}
+
+.logo img{
+    height:120px;
+}
+
+.inputCont{
+    margin-top: 3px;
+}
+
+.inputCont img{
+    height: 23px;
+    opacity: 0.8;
+}
+
+.inputCont .div{
+    left: 14%;
+}
+
+form input[type="text"]{
+    margin-left: 12px;
+}
+ 
+form input[type="email"]{
+    margin-left: 12px;
+}
+
+form input[type="password"]{
+    margin-left: 12px;
+}
+
+form input[type="submit"]{
+    margin-bottom: 4px;
+}
+
+.differentWay{
+    padding-top:0;
+}

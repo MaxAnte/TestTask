@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: url(/pictures/bgf.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 6%;
+    height: 450px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #000;
+    margin-bottom: 100px;
+}
+
+.form-wrap .error-box,
+.form-wrap .message-box {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    min-width: 200px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: all 0.3s ease-in;
+}
+
+.form-wrap .error-box.error__active,
+.form-wrap .message-box.message__active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.form-wrap .message-box p {
+  padding: 2px 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: green;
+}
+
+.form-wrap .error-box ul {
+    padding-left: 15px;
+    list-style: circle;
+}
+
+.form-wrap .error-box ul li {
+    padding: 2px 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: red;
+}
+
+/*----------------------------------------------*/
+
+.logo img{
+    height: 150px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    overflow: hidden;
+}
+
+.inputCont{
+    border: 1px gray solid;
+    border-radius: 20px;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    transition: all .3s ease;
+}
+
+.errorMessage{
+    height: 16px;
+    color:red;
+    font-size: 14px;
+    margin:2px 0px 0px 15px;
+    transition: all 1s ease;
+}
+
+.inputCont img{
+    height: 23px;
+    opacity: 0.8;
+    margin: 7px 0px 0px 10px;
+}
+
+.inputCont .div{
+    position: absolute;
+    left: 13%;
+    top: 13%;
+    height: 70%;
+    width: 1px;
+    background-color: gray;
+}
+
+form input{
+    margin-top: 10px;
+    margin-right: 15px;
+    height: 20px;
+    width: 100%;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+}
+
+form input[type="text"]{
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+ 
+form input[type="email"]{
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+form input[type="password"]{
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"]{
+    height: 40px;
+    border: 2px rgb(5, 119, 24) solid;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    margin-top: 15px;
+}
+
+form input[name="submit"]:hover{      
+    background-color: rgb(5, 119, 24);
+    color: #fff;
+}
+
+.differentWay{
+    font-size: 12px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+.differentWay a{
+    color: #000;
+}
+
+.differentWay a:hover{
+    color: rgb(5, 119, 24);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.error{
+    border: 1px #D32F2F solid;
+    color: #D32F2F;
+    text-align: center;
+}
+
+.success{
+    border: 1px rgb(5, 119, 24) solid;
+    color: rgb(5, 119, 24);
+    text-align: center;
+}

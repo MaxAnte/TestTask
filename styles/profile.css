@@ -1,0 +1,97 @@
+.logOutCorner{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 40px 0px 0px;
+}
+
+.logOutCorner a{
+    color:  rgb(5, 119, 24);
+}
+
+.profileLogo{
+    height: 150px;
+    width: 150px;
+}
+
+.namesPlace p{
+    font-size: 22px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.namesPlace p::before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    left:0;
+    width: 90%;
+    height: 1px;
+    background-color: gray;
+    margin: 0 auto;
+}
+
+.infoBlock{
+    width:inherit;
+}
+
+.namesPlace{
+    display: flex;
+    justify-content: center;
+}
+
+.infoPlace{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.infoPlace img{
+    height: 28px;
+    width: 28px;
+}
+
+.infoPlace p{
+    margin-left: 5px;
+}
+
+.sesInfo{
+    position: relative;
+}
+
+.sesInfo::before{
+    content: '';
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:-3px;
+    margin: 0 auto;
+    height: 1px;
+    width: 90%;
+    background-color: gray;
+}
+
+.logOut{
+    margin-bottom: 20px;
+    height: 40px;
+    width: 50%;
+    border-radius: 30px;
+    background-color: #D32F2F;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    position: relative;
+}
+
+.logOut a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
